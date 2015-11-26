@@ -93,5 +93,5 @@ uppsetning í skrá
 	annað - ef við höfum annað
 
 
-//.....
+//..........
 
