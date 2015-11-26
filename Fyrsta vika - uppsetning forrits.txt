@@ -4,47 +4,47 @@ global
 
 main
 
-	uppfæra skjal
+	uppfÃ¦ra skjal
 
 	menu - switch val
-		leita, bæta, eyğa, birta, hætta
-		breyta upplısingum ef rangar - şarf ağ vera hægt ağ velja einstakling og flokk()
+		leita, bÃ¦ta, eyÃ°a, birta, hÃ¦tta
+		breyta upplÃ½singum ef rangar - Ã¾arf aÃ° vera hÃ¦gt aÃ° velja einstakling og flokk()
 
 
-	smá beinagrind fyrir main:
+	smÃ¡ beinagrind fyrir main:
 
 	firststart(filename);
 
 	loop(true){
-		menu(); // inn í main er exit(1); til ağ loka forriti
+		menu(); // inn Ã­ main er exit(1); til aÃ° loka forriti
 	}
 	
 
 
 class people - heldur utan um einstaklinga
 
-	föll
-		firststart(string filename) - main kallar á şetta fall í byrjun, skoğar hvort skráin er til
-					ef svo sækir upplısingarnar şangağ, ef ekki şá er nı búin til.
+	fÃ¶ll
+		firststart(string filename) - main kallar Ã¡ Ã¾etta fall Ã­ byrjun, skoÃ°ar hvort skrÃ¡in er til
+					ef svo sÃ¦kir upplÃ½singarnar Ã¾angaÃ°, ef ekki Ã¾Ã¡ er nÃ½ bÃºin til.
 			
-		update(string filename) - fær nafn á skjali og ritar yfir upplısingarnar şar meğ
-					nıju upplısingunum.
+		update(string filename) - fÃ¦r nafn Ã¡ skjali og ritar yfir upplÃ½singarnar Ã¾ar meÃ°
+					nÃ½ju upplÃ½singunum.
 
 
-		search - eftir nafni, kyni, fæğingarári, dánarári,
-			switch menu til ağ velja hvağ á ağ leita eftir
+		search - eftir nafni, kyni, fÃ¦Ã°ingarÃ¡ri, dÃ¡narÃ¡ri,
+			switch menu til aÃ° velja hvaÃ° Ã¡ aÃ° leita eftir
 
-			nöfn şurfa ağ passa nákvæmlega ef leitağ er meğ fullu nafni. Getum bútağ niğur og 
-			leita eftir pörtum ş.e. fyrra nafni, millinöfnum, eftirnafni.
+			nÃ¶fn Ã¾urfa aÃ° passa nÃ¡kvÃ¦mlega ef leitaÃ° er meÃ° fullu nafni. Getum bÃºtaÃ° niÃ°ur og 
+			leita eftir pÃ¶rtum Ã¾.e. fyrra nafni, millinÃ¶fnum, eftirnafni.
 			
 
-			display alla sem passa viğ
+			display alla sem passa viÃ°
 
-			ef ár passar ekki fullkomlega display eitthvağ range ára sem passa viğ.
+			ef Ã¡r passar ekki fullkomlega display eitthvaÃ° range Ã¡ra sem passa viÃ°.
 
 		display/print - birta lista
-			switch menu til ağ velja eftir hverju er birt ş.e. nafni, kyni, fæğingarári, dánarári
-			 ?(í öfugri röğ ef viğ viljum vera fancy)?
+			switch menu til aÃ° velja eftir hverju er birt Ã¾.e. nafni, kyni, fÃ¦Ã°ingarÃ¡ri, dÃ¡narÃ¡ri
+			 ?(Ã­ Ã¶fugri rÃ¶Ã° ef viÃ° viljum vera fancy)?
 	
 
 	variables
@@ -52,46 +52,46 @@ class people - heldur utan um einstaklinga
 		vector heldur utan um einstaklingana 
 
 
-class individual - inniheldur upplısingar um einstakling.
+class individual - inniheldur upplÃ½singar um einstakling.
 	
 	functions:
 
-	get föll - ná í breytur
+	get fÃ¶ll - nÃ¡ Ã­ breytur
 
-	set föll - breyta breytum
+	set fÃ¶ll - breyta breytum
 
-	print fall - prental allar upplısingar sem eiga viğ (dánarár?)
+	print fall - prental allar upplÃ½singar sem eiga viÃ° (dÃ¡narÃ¡r?)
 
 
 	variables:
 
 	name
-	lastname sér fyrir einföldun í leit
+	lastname sÃ©r fyrir einfÃ¶ldun Ã­ leit
 
 	gender
 
 	year of birth
 
-	dead? - til vita hvort dánarár á viğ
+	dead? - til vita hvort dÃ¡narÃ¡r Ã¡ viÃ°
 	
-	year of death - ef á viğ, ef ekki upphafsstilt sem 0000
+	year of death - ef Ã¡ viÃ°, ef ekki upphafsstilt sem 0000
 
-	ağrar upplısingar
+	aÃ°rar upplÃ½singar
 
 
-uppsetning í skrá
+uppsetning Ã­ skrÃ¡
 
-	hver einstaklingur í skránni er rağa svona og getline falliğ er notağ.
+	hver einstaklingur Ã­ skrÃ¡nni er raÃ°a svona og getline falliÃ° er notaÃ°.
 
-	nafn - mögulega skipt upp
+	nafn - mÃ¶gulega skipt upp
 		first name
 		last name		
 	kyn
-	fæğingarár
-	er dáinn? - til ağ vita hvort hann/hún sé dáin(n) eğa ekki
-	dánarár - skiptir ekki máli
-	annağ - ef viğ höfum annağ
+	fÃ¦Ã°ingarÃ¡r
+	er dÃ¡inn? - til aÃ° vita hvort hann/hÃºn sÃ© dÃ¡in(n) eÃ°a ekki
+	dÃ¡narÃ¡r - skiptir ekki mÃ¡li
+	annaÃ° - ef viÃ° hÃ¶fum annaÃ°
 
 
-
+//.....
 
