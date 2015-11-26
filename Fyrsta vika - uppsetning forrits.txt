@@ -1,0 +1,97 @@
+global
+
+	const string filename
+
+main
+
+	uppfæra skjal
+
+	menu - switch val
+		leita, bæta, eyða, birta, hætta
+		breyta upplýsingum ef rangar - þarf að vera hægt að velja einstakling og flokk()
+
+
+	smá beinagrind fyrir main:
+
+	firststart(filename);
+
+	loop(true){
+		menu(); // inn í main er exit(1); til að loka forriti
+	}
+	
+
+
+class people - heldur utan um einstaklinga
+
+	föll
+		firststart(string filename) - main kallar á þetta fall í byrjun, skoðar hvort skráin er til
+					ef svo sækir upplýsingarnar þangað, ef ekki þá er ný búin til.
+			
+		update(string filename) - fær nafn á skjali og ritar yfir upplýsingarnar þar með
+					nýju upplýsingunum.
+
+
+		search - eftir nafni, kyni, fæðingarári, dánarári,
+			switch menu til að velja hvað á að leita eftir
+
+			nöfn þurfa að passa nákvæmlega ef leitað er með fullu nafni. Getum bútað niður og 
+			leita eftir pörtum þ.e. fyrra nafni, millinöfnum, eftirnafni.
+			
+
+			display alla sem passa við
+
+			ef ár passar ekki fullkomlega display eitthvað range ára sem passa við.
+
+		display/print - birta lista
+			switch menu til að velja eftir hverju er birt þ.e. nafni, kyni, fæðingarári, dánarári
+			 ?(í öfugri röð ef við viljum vera fancy)?
+	
+
+	variables
+
+		vector heldur utan um einstaklingana 
+
+
+class individual - inniheldur upplýsingar um einstakling.
+	
+	functions:
+
+	get föll - ná í breytur
+
+	set föll - breyta breytum
+
+	print fall - prental allar upplýsingar sem eiga við (dánarár?)
+
+
+	variables:
+
+	name
+	lastname sér fyrir einföldun í leit
+
+	gender
+
+	year of birth
+
+	dead? - til vita hvort dánarár á við
+	
+	year of death - ef á við, ef ekki upphafsstilt sem 0000
+
+	aðrar upplýsingar
+
+
+uppsetning í skrá
+
+	hver einstaklingur í skránni er raða svona og getline fallið er notað.
+
+	nafn - mögulega skipt upp
+		first name
+		last name		
+	kyn
+	fæðingarár
+	er dáinn? - til að vita hvort hann/hún sé dáin(n) eða ekki
+	dánarár - skiptir ekki máli
+	annað - ef við höfum annað
+
+
+
+
