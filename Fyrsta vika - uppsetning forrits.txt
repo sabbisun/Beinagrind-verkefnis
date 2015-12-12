@@ -1,4 +1,5 @@
 ﻿globallvdvfaafaaf
+thetta er nu meira bullid
 
 	const string filename
 
